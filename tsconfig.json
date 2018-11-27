@@ -16,6 +16,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@alshdavid/ngx-utilities": [
+        "dist/alshdavid/ngx-utilities"
+      ],
+      "@alshdavid/ngx-utilities/*": [
+        "dist/alshdavid/ngx-utilities/*"
+      ]
+    }
   }
 }

@@ -1,0 +1,14 @@
+{
+  "name": "@alshdavid/ngx-utilities",
+  "version": "0.0.2",
+  "peerDependencies": {
+    "@angular/common": "^7.0.0",
+    "@angular/core": "^7.0.0",
+    "@ngrx/store": "^6.1.2",
+    "lodash": "^4.17.11"
+  },
+  "dependencies": {
+    "@ngrx/store": "^6.1.2",
+    "lodash": "^4.17.11"
+  }
+}

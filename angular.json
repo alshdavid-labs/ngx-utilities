@@ -129,6 +129,41 @@
           }
         }
       }
+    },
+    "@alshdavid/ngx-utilities": {
+      "root": "projects/alshdavid/ngx-utilities",
+      "sourceRoot": "projects/alshdavid/ngx-utilities/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/alshdavid/ngx-utilities/tsconfig.lib.json",
+            "project": "projects/alshdavid/ngx-utilities/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/alshdavid/ngx-utilities/src/test.ts",
+            "tsConfig": "projects/alshdavid/ngx-utilities/tsconfig.spec.json",
+            "karmaConfig": "projects/alshdavid/ngx-utilities/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/alshdavid/ngx-utilities/tsconfig.lib.json",
+              "projects/alshdavid/ngx-utilities/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ngx-utilities"
